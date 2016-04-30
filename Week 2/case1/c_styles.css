@@ -1,0 +1,64 @@
+/*
+   New Perspectives on HTML
+   Tutorial 3
+   Case Problem 1
+
+   ICI Text and Color Styles
+   Author: Benjamin Burgess
+   Date: 4/23/2016
+
+   Filename:         c_styles.css
+   Supporting Files: none
+
+*/
+
+/* general style of the website*/
+body
+{
+    background-color: black;
+    color: white;
+    font-family: "Century Gothic", sans-serif;
+}
+
+/* style for h1 nested within header*/
+header > h1
+{
+ color: yellow;
+ font-family: Courier New, Courier, monospace;
+ font-size: 28px;
+ letter-spacing: 20px;
+ text-align: center;
+}
+
+/* style for h2 within article */
+article > h2
+{
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 5px;
+}
+
+/* style for paragraph within article */
+article p
+{
+    text-align: justify;
+}
+
+/* style for strong element of class keyword */
+.keyword
+{
+    color: yellow;
+    font-weight: normal;
+}
+
+/* style for paragraph within footer */
+footer p
+{
+    text-align: center;
+}
+
+/* remove border from image map */
+img #locks
+{
+    border: none 0px;
+}

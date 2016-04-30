@@ -1,0 +1,167 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 5
+   Case Problem 3
+
+   Dome Table Style Sheet
+   Author: Benjamin Burgess
+   Date:   4/29/2016
+
+   Filename:         dtable.css
+   Supporting files: bottom.jpg, bottomleft.jpg, bottomright.jpg,
+                     left.jpg,right.jpg, tableback.jpg,
+                     top.jpg, topleft.jpg, topright.jpg
+
+*/
+
+/* general table settings, sets the background image, floats it to the right*/
+.domeSpecs
+{
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    float: right;
+    border-collapse: collapse;
+    background-image: url("tableback.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+}
+
+/* padding for the cells */
+.domeSpecs tr td
+{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* settings for the table caption */
+.domeSpecs caption
+{
+    font-size: 18px;
+    kerning: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* settings for the table header row, adds background image */
+.domeSpecs thead tr
+{
+    border: 0px none;
+    border-bottom: 2px solid gray;
+    background-image: url("top.jpg");
+    background-position: top;
+    background-repeat: repeat-x;
+    height: 40px;
+}
+
+/* settings for the cells in the table header */
+.domeSpecs thead tr th
+{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    kerning: 2px;
+}
+
+/* for first cell in table header, adds rounded corner to top left */
+.domeSpecs thead tr th:first-of-type
+{
+    background-image: url("topleft.jpg");
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+/* for last cell in table header, adds rounded corner to top right */
+.domeSpecs thead tr th:last-of-type
+{
+    background-image: url("topright.jpg");
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+/* for the footer row, adds background image */
+.domeSpecs tfoot tr
+{
+    border: 0px none;
+    border-top: 2px solid gray;
+    text-align: center;
+    background-image: url("bottom.jpg");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    height: 40px;
+}
+
+/* for first cell in footer row, adds rounded corner to bottome left */
+.domeSpecs tfoot tr td:first-of-type
+{
+    background-image: url("bottomleft.jpg");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+}
+
+/* for last cell in footer row, adds rounded corner to bottom right */
+.domeSpecs tfoot tr td:last-of-type
+{
+    background-image: url("bottomright.jpg");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+/* for all the rows in table body, adds a dotted grey bottom border */
+.domeSpecs tbody tr
+{
+    height: 50px;
+    border: 0px none;
+    border-bottom: 1px dotted gray;
+}
+
+/* for all the left cells in table body, adds a vertical left border */
+.domeSpecs tbody tr td:first-of-type
+{
+    background-image: url("left.jpg");
+    background-position: top left;
+    background-repeat: repeat-y;
+}
+
+/* for all the right cells in table body, adds a vertical right border */
+.domeSpecs tbody tr td:last-of-type
+{
+    background-image: url("right.jpg");
+    background-position: top right;
+    background-repeat: repeat-y;
+    text-align: right;
+}
+
+/* odd rows in table body appear white with 60% opacity */
+.domeSpecs tbody tr:nth-last-of-type(odd)
+{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* even rows in table body appear bluish with 60% opacity */
+.domeSpecs tbody tr:nth-of-type(even)
+{
+    background-color: rgba(152, 228, 215, 0.6);
+}
+
+/* sets width of firstColumn class to 22% of total */
+.domeSpecs .firstColumn
+{
+    width: 22%;
+}
+
+/* sets width of middleColumns class to 28% of total */
+.domeSpecs .middleColumns
+{
+    width: 28%;
+}
+
+/* sets width of lastColumn class to 22% of total */
+.domeSpecs .lastColumn
+{
+    width: 22%;
+}

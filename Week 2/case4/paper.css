@@ -1,0 +1,160 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 4
+   Case Problem 4
+
+   Park City Gazette Style Sheet
+   Author: Benjamin Burgess
+   Date:   4/23/2016
+
+   Filename:         paper.css
+   Supporting Files: 
+
+*/
+header
+{
+    text-align: center;
+    margin-bottom: 25px;
+    border: 0px none;
+    border-bottom: 7px solid black;
+    background-image: url("parch2.jpg");
+}
+
+header img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 140px;
+    border: 0px, none;
+}
+
+body
+{
+    display: block;
+    background-image: url("parch.jpg");
+}
+
+img
+{
+    min-width: 25%;
+    max-width: 50%;
+    min-height: 25%;
+    max-height: 50%;
+    border: 0px, 0px;
+}
+
+article
+{
+    margin: 0px;
+    margin-left: 108px;
+    padding: 0px;
+    padding-left: 108px;
+}
+
+aside
+{
+    margin-left: 108px;
+    padding-left: 108px;
+}
+
+strong
+{
+    color: red;
+    text-shadow: black 1px 1px 2px;
+}
+
+#nav-top
+{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    line-height: 2;
+}
+
+li a
+{
+    float: left;
+    clear: left;
+    min-width: 200px;
+    max-width: 280px;
+    height: 34px;
+    border: 3px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    text-decoration: none;
+}
+
+#nav-bottom
+{
+    float: left;
+    clear: left;
+    list-style-type:none;
+    height: 34px;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    line-height: 2;
+}
+
+#nav-bottom li:hover 
+{
+    list-style-type:none;
+    height: 34px;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    line-height: 2;
+}
+
+#nav-bottom li
+{
+    float:left;
+    clear: left;
+    border-radius: 25px;
+}
+
+#nav-bottom a
+{
+    display:block;
+    width: auto;
+    text-decoration: none;
+}
+
+
+
+#nav-bottom li ul 
+{
+    position: absolute;
+    width: auto;
+    left: -999px;
+    list-style-type:none;
+}
+
+#nav-bottom li ul li a 
+{
+    color: black;
+    width: auto;
+    border-bottom:1px solid black;
+}
+
+#nav-bottom li ul li a:hover 
+{
+    color: white;
+    width: auto;
+    background-color: #2a2a2a;
+    border-bottom:1px solid white;
+}
+
+#nav-bottom li:hover ul 
+{
+    padding: 0;
+    margin: 0;
+    background-image: url("parch2.jpg");
+    left: 200px;
+    bottom: -480px;
+}

@@ -1,0 +1,47 @@
+
+/*
+      New Perspectives on HTML and CSS
+      Tutorial 6
+      Case Problem 4
+
+      Millenium Computers: Order Form
+      Author: Benjamin Burgess
+      Date:   4/29/2016
+
+      Filename:         oform.css
+
+*/
+
+/* center the form in the page, give the top 20 pix of padding */
+form
+{
+      display: block;
+      text-align: center;
+      padding-top: 20px;
+}
+
+/* input focus to highlight what user is working on */
+input:focus, select:focus, textarea:focus
+{
+      background-color: rgba(255, 255, 156, 0.6);
+}
+
+/* if the input is valid, make it green, with a green checkmark graphic */
+.info:valid
+{
+      background-color: rgb(220, 255, 220);
+      background-image: url("go.png");
+      background-size: contain;
+      background-position: bottom right;
+      background-repeat: no-repeat;
+}
+
+/* if the input is invalid, make it red with a red stop sign x graphic */
+.info:invalid
+{
+      background-color: rgb(255, 220, 220);
+      background-image: url("stop.png");
+      background-size: contain;
+      background-position: bottom right;
+      background-repeat: no-repeat;
+}
