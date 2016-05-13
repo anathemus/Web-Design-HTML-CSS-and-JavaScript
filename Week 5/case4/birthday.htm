@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+      New Perspectives on HTML and CSS
+      Tutorial 10
+      Case Problem 4
+
+      HappyBirthdayNews.com
+      Author: Benjamin Burgess
+      Date:   5/12/2016
+
+      Filename:         birthday.htm
+      Supporting files: functions.js, modernizr-1.5.js, style.css
+                        
+
+   -->
+
+      <meta charset="UTF-8" />
+      <title>Happy Birthday News</title>
+      <script src="modernizr-1.5.js"></script>
+
+      <link href="style.css" rel="stylesheet" type="text/css" />
+      <script src="functions.js"></script>
+   </head>
+   
+   <body>
+       <div id="today">
+           <script style="text/javascript">
+               var today = showDate(today);
+               document.write("Today is<br />" + today);
+           </script>
+       </div>
+       <div id="famous">
+           <script style="text/javascript">
+               var day = dayNumber(day);
+               document.write("Born Today<br /><br />" + showBirthDay(day));
+           </script>
+       </div>
+   </body>
+</html>

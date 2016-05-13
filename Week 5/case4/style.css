@@ -1,0 +1,32 @@
+body
+{
+    background-image: url("birthday.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -8%;
+}
+
+div#today
+{
+    height: 50px;
+    width: 300px;
+    color: wheat;
+    background-color: transparent;
+    text-align: center;
+    position: fixed;
+    top: 50px;
+    left: 35%;
+}
+
+div#famous
+{
+    height: 50px;
+    width: 300px;
+    color: wheat;
+    background-color: transparent;
+    text-align: center;
+    position: fixed;
+    top: 180px;
+    left: 35%;
+}
